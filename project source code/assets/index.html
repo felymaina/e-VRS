@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-voter registration system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+       <div class="navbar">
+           <div class="icon">
+               <h2 class="logo">e-Voter</h2>
+           </div>
+           <div class="menu">
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="register.html">REGISTER</a></li>
+                   <li><a href="verify.html">VERIFY</a></li>
+                   <li><a href="contact.html">CONTACT </a></li>
+                   
+               </ul>
+           </div>
+           <div class="search">
+               <input type="search" class="srch" name="" placeholder="search here...">
+                <a href="#"><button class="btn">Search</button></a>
+           </div>
+       </div>
+       <div class="content">
+           <h1>Ksu-SA Student Council <br><span> Voter Registration </span><br>Plaform</h1>
+           <p class="par">Welcome to the Kisii University student council elections e-voter registration platform.
+               <br> Every student currently on session is elegible to vote in this election.<br>
+                Transparency of the voter registration process is assured so dont worry. 
+                <br> Please register and Happy votting!</p>
+
+                <button class="cn"><a href="contact.html">Learn more...</a></button>
+                
+                <div class="form">
+                    <form action="#" name="myform" onsubmit="return validateForm()" method="post">
+                      <h2>Login to Register</h2> 
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="text" name="regno" placeholder="Enter registration number">
+                    <button class="btnn" onclick="validateform"><a href="register.html" value="register">Login</a></button>
+
+                    <p class="link">New here?Contact admin</p>
+                    </form>
+                </div>
+            
+       </div>
+
+
+   </div>
+</body>
+<script>
+    function validateForm(){
+        var x = document.forms["myform"]
+        ["name"].value;
+        var y = document.forms["myform"]
+        ["regno"].value;
+
+        if (x == ""){
+            alert("Name must be filled out!")
+            return false;
+        }
+
+        
+        else if (y == ""){
+            alert("OOPS!..This feild must be filled out!")
+            return false;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //validation
+// function validateform(){
+//     var name= document.form.name.value;
+//     var regno = document.form.regno.value;
+
+
+//     if (name==nul||name=="") {
+//         window.alert(" OOPS!...Cant be left blank!")
+//         return false;     
+//     }
+//     else if(regno==null||regno==""){
+//         window.alert("OOPS!... Can't be left blank!")
+//         return false;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+</script>
+</html>

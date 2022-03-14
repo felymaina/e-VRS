@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>VERIFY</title>
+</head>
+<body>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">e-Voter</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="register.html">REGISTER</a></li>
+                        <li><a href="verify.html">VERIFY</a></li>
+                        <li><a href="contact.html">CONTACT </a></li>
+                    
+                    </ul>
+                </div> 
+            </div>
+            <div class="form">
+                <form action="/reg.js" name="myform"  method="post">
+                <h2>Voter verification</h2>
+               
+                <input type="text" name="regno" placeholder="Enter registration number" required>
+                <input type="text" name="faculty" placeholder="Enter faculty" required>
+                <input type="text" name="yr" placeholder="Enter year of study">
+                <button class="btnn" onclick="return validateForm()"><a href="app.html">Click to verify</a></button>
+    
+                <p class="link">New here?Contact admin</p>
+                </form>
+            </div>
+        </div>
+    
+</body>
+<script>
+    function validateForm(){
+    //   var x = document.forms["myform"]
+    //   ["name"].value;
+      var y = document.forms["myform"]
+      ["regno"].value;
+      var z = document.forms["myform"]
+      ["faculty"].value;
+
+    //   if (x == ""){
+    //       alert("Name must be filled out!")
+    //       return false;
+    //   }
+
+      
+     if (y == ""){
+          alert("OOPS!..This field must be filled out!")
+          return false;
+      }
+      else if (z == ""){
+          alert("OOPS!..This field must be filled out!")
+          return false;
+      }
+      
+  }
+
+
+</script>
+</html>

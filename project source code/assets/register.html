@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>REGISTER</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">e-Voter</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <li><a href="verify.html">VERIFY</a></li>
+                    <li><a href="contact.html">CONTACT </a></li>
+                
+                </ul>
+            </div> 
+        </div>
+        <div class="form">
+            <form action="#" name="myform" method="post">
+            <h2>Register to vote</h2>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="regno" placeholder="Enter registration number" required>
+            <input type="text" name="faculty" placeholder="Enter faculty" required>
+            <input type="text" name="course" placeholder="Enter course" required>
+            <input type="text" name="yr" placeholder="Enter year of study" required>
+            <button class="btnn" onclick="return validateForm()"><a href="app.html">Register</a></button>
+
+            <p class="link">New here?Contact admin</p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+      function validateForm(){
+        var x = document.forms["myform"]
+        ["name"].value;
+        var y = document.forms["myform"]
+        ["regno"].value;
+
+        if (x == ""){
+            alert("OOPS!..This field must be filled out!")
+            return false;
+        }
+
+        
+        else if (y == ""){
+            alert("OOPS!..This field must be filled out!")
+            return false;
+        }
+        
+    }
+
+
+
+    // function submit(){
+    //     var x = document.forms["myform"]
+    //     ["name"].value;
+    //     var y = document.forms["myform"]
+    //     ["regno"].value;
+
+    //     if (x == ""){
+    //         alert("Name must be filled out!")
+    //         return false;
+    //     }
+
+        
+    //     else if (y == ""){
+    //         alert("OOPS!..This feild must be filled out!")
+    //         return false;
+    //     }
+        
+    // }
+
+
+
+</script>
+
+
+
+</html>
